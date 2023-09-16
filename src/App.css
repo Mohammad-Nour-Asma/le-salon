@@ -1,0 +1,123 @@
+/* Start Variables */
+
+:root {}
+
+
+/* End Variables */
+
+
+/* Start Component*/
+
+
+/* End Component*/
+
+
+/* Start Glable Rules */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ddd;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Small */
+
+@media (min-width :768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/* Medium */
+
+@media (min-width :992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/* Larg */
+
+@media (min-width :1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* End Global Rules */
+
+@keyframes right {
+  0%{
+    transform: translateX(0);
+  
+  } 
+  50%{
+    transform: translateX(2px);
+
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes bump {
+  0%{
+    transform: scale(1);
+  
+  } 
+  50%{
+    transform: scale(1.1);
+    color :rgb(10 114 191);
+
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.right{
+  animation: right 1s infinite;
+}
+.splide{
+  padding: 1rem !important;
+}
+
+.bump{
+  animation: bump 0.5s infinite;
+
+}
+
+/* .splide__list{
+  justify-content: center;
+} */
